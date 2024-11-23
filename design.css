@@ -1,10 +1,39 @@
+body{
+    background:linear-gradient(to top,gray,lightgray);
+}
 img{
     display:block;
     margin-left:auto;
     margin-right:auto;
-    border:solid gray 5px;
+    border:solid rgb(218, 209, 199) 5px;
 }
 h4{
     text-align:center;
+    font-size:20px;
+}
+div{
+    text-align:center;
+}
+ul{ /*setting the display property of the list to inline
+    block makes it behave as both enabling it to be in the center as
+    a block and with the needed space only as an inline element*/
+    display:inline-block;
+    background-color:rgb(218, 209, 199);
+    overflow:hidden;
+    margin:40;
+
+}
+li{
+    display:block;
     font-size:18px;
+    float:left;
+    text-align: center;
+    padding:14px 16px;
+}
+li a:hover{
+    background-color:azure;
+}
+a{
+    text-decoration: none;
+    color:black;
 }
