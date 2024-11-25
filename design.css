@@ -1,60 +1,93 @@
-body{
-    background:linear-gradient(to top,gray,lightgray);
+body {
+    background: linear-gradient(to top, gray, lightgray);
 }
-img{
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    border:solid rgb(218, 209, 199) 5px;
+
+.main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid rgb(218, 209, 199) 5px;
 }
-#earlylife p, #death p{ 
-    display:inline-block;
-    text-align:center;
-    background-color:antiquewhite;
+
+#earlylife p,
+#death p {
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    background-color: antiquewhite;
     border: solid 3px whitesmoke;
-    width:500px;
-    height:130px;
-    padding: 10px 15px;
+    max-width: 50%;
+    height: 157px;
+    padding: 13px 15px;
 }
-#work p, #legacy p{
-    display:inline-block;
-    text-align:center;
-    background-color:antiquewhite;
+
+img {
     border: solid 3px whitesmoke;
-    width:500px;
-    height:175px;
-    padding: 10px 15px;   
-}
-h4{
-    text-align:center;
-    font-size:25px;
-}
-h3{
-    font-size:25px;
-}
-div{
-    text-align:center;
-}
-ul{ /*setting the display property of the list to inline
-    block makes it behave as both enabling it to be in the center as
-    a block and with the needed space only as an inline element*/
-    display:inline-block;
-    background-color:rgb(218, 209, 199);
-    overflow:hidden;
-    margin:40;
 
 }
-li{
-    display:block;
-    font-size:18px;
-    float:left;
+
+#legacy p {
+    font-size: 20px;
+    text-align: justify;
+    background-color: antiquewhite;
+    border: solid 3px whitesmoke;
+    max-width: 70%;
+    height: 182px;
+    padding: 10px 15px;
+}
+
+#work p {
+    font-size: 20px;
+    text-align: justify;
+    background-color: antiquewhite;
+    border: solid 3px whitesmoke;
+    max-width: 70%;
+    height: 178px;
+    padding: 10px 15px;
+}
+
+h4 {
     text-align: center;
-    padding:14px 16px;
+    font-size: 25px;
 }
-li a:hover{
-    background-color:antiquewhite;
+
+h3 {
+    font-size: 25px;
 }
-a{
+
+#workHeader,
+#legacyHeader {
+    text-align: left;
+}
+
+div {
+    text-align: center;
+}
+
+ul {
+    /*setting the display property of the list to inline
+    block makes it behave as both enabling it to be in the center as
+    a block and with the needed space only as an inline element*/
+    display: inline-block;
+    background-color: rgb(218, 209, 199);
+    overflow: hidden;
+    margin: 40;
+
+}
+
+li {
+    display: block;
+    font-size: 18px;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+li a:hover {
+    background-color: antiquewhite;
+}
+
+a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
