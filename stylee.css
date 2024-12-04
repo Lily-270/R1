@@ -1,3 +1,7 @@
 body{
     background-image: linear-gradient(to right,rgb(207, 154, 204),rgb(255, 247, 184));
 }
+h1{
+    color:dimgray;
+    font-family:'Times New Roman', Times, serif;
+}
