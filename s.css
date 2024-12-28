@@ -1,5 +1,5 @@
 body{
-    background-image:linear-gradient(to left,rgb(240, 209, 115),rgb(235, 169, 216));
+    background-image:linear-gradient(to right,rgb(207, 154, 204),rgb(255, 247, 184));
 }
 #header{
     text-align:center;
@@ -19,4 +19,13 @@ input:focus:invalid{
 }
 button:hover{
     color:rgb(214, 176, 21);
+}
+input[type=text],input[type=password]{
+    border:3px inset gray;
+    border-radius: 1em;
+    width:10vw;
+    height:3vh;
+}
+a{
+    text-decoration: none;
 }
