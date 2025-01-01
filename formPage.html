@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Lilyan">
     <meta name="description" content="Film webpage">
-    <meta name="robots" content="index">
+    <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial scale=1.0">
     <meta name="handheldFriendly" content="true">
     <title>Lily's Bakery</title>
@@ -14,36 +14,38 @@
 </head>
 
 <body>
-    <div id="header">
-        <h1>Welcome to Lily's Bakery!</h1>
-        <video width="300" height="300" autoplay muted>
-            <source src="C:\Users\lilya\Downloads\Gold Cake Bakery Elegant Luxury Logo.mp4" type="video/mp4">
-        </video>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to Lily's Bakery!</h1>
+            <video width="300" height="300" autoplay muted>
+                <source src="C:\Users\lilya\Downloads\Gold Cake Bakery Elegant Luxury Logo.mp4" type="video/mp4">
+            </video>
+        </div>
+        <form class="main" method="get" action="index.html">
+            <div>
+                <label for="username">Username</label><br>
+                <input type="text" id="username" name="username" required minlength="4" maxlength="12">
+            </div>
+            <div>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&]).{8,}"
+                    title="Must contain at least one number, one uppercase and lowercase letter, one special character, and at least 8 or more characters">
+            </div>
+            <div>
+                <label>Don't have an account?</label>
+                <a href="regester.html">Create one!</a>
+            </div>
+            <br>
+            <div>
+                <button type="submit"><b>Log in</b></button>
+            </div>
+        </form>
+        <div class="footer">
+            <img src="https://cartoonsco-media.s3.amazonaws.com/uploads/2022/08/preview-of-bread-animated-gif-waving.gif"
+                width="200" height="190">
+        </div>
     </div>
-    <br>
-    <form id="form_content" method="get" action="index.html">
-        <div>
-            <label for="username">Username</label><br>
-            <input type="text" id="username" name="username" required minlength="4" maxlength="12">
-        </div>
-        <div>
-            <label for="password">Password</label><br>
-            <input type="password" id="password" name="password" required
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&]).{8,}"
-                title="Must contain at least one number, one uppercase and lowercase letter, one special character, and at least 8 or more characters">
-        </div>
-        <div>
-            <label>Don't have an account?</label>
-            <a href="regester.html">Create one!</a>
-        </div>
-        <br>
-        <div>
-            <button type="submit"><b>Log in</b></button>
-        </div>
-        <img src="https://cartoonsco-media.s3.amazonaws.com/uploads/2022/08/preview-of-bread-animated-gif-waving.gif"
-            width="200" height="190">
-    </form>
-
 </body>
 
 </html>
