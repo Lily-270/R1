@@ -45,10 +45,6 @@ body {
     text-align:center;
     margin:auto;
 }
-.main{
-    grid-area:main;
-    text-align:center;
-}
 
 h4{
     font-size:1.5em;
@@ -71,4 +67,16 @@ li a:hover {
 a {
     text-decoration: none;
     color: black;
+}
+#earlylife{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    border:3px solid rgb(215, 191, 149);
+}
+#work{
+    display:inline-flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    border:3px solid rgb(215, 191, 149);
 }
