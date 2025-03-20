@@ -1,0 +1,24 @@
+.container{
+    font-family:'DM Serif Display', serif;
+    display:grid;
+    place-items:center;
+    margin-top:15%;
+}
+label,input,button{
+    display:block;
+}
+@media(max-width:430px){
+    .container{
+        font-family:'DM Serif Display', serif;
+        display:grid;
+        place-items:center;
+        margin-top:40%;
+    }
+}
+button{
+    border-radius:13px;
+    padding:5px;
+    background-color:rgb(240, 208, 127);
+    margin-top:1rem;
+    cursor: pointer;
+}
