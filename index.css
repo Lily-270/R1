@@ -1,77 +1,106 @@
-body{
-    background-color:rgb(226,211,205);
+body {
+    background-color: rgb(226, 211, 205);
 }
-.navbar-nav{
-    display:flex;
-    gap:3rem;
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-.header1{
-    color:#47300f;
-    font-size:70px;
-    position:absolute;
-    left:150px;
-    top:120px;
-    font-family:'DM Serif Display', serif;
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        /* Stack items vertically */
+        gap: 20px;
+        /* Add space between items */
+    }
+
+    .cupcake-hero-pic,
+    .header1,
+    .header2,
+    .order-button,
+    .circle1 {
+        position: static;
+        /* Remove absolute positioning */
+        width: 50%;
+        /* Ensure full width */
+        margin: 10px 0;
+        /* Add margin for spacing */
+    }
 }
-.header2{
-    color:#47300f;
-    font-size:70px;
-    position:absolute;
-    left:230px;
-    bottom:280px;
-    font-family:'DM Serif Display', serif;
+
+
+.navbar-nav {
+    display: flex;
+    gap: 3rem;
 }
-.order-button{
-    position:absolute;
-    left:230px;
-    bottom:180px;
-    background-color:#DFAD74;
-    color:white;
-    border:#DFAD74;
+
+.header1 {
+    color: #47300f;
+    font-size: 70px;
+    position: absolute;
+    left: 150px;
+    top: 120px;
+    font-family: 'DM Serif Display', serif;
+}
+
+.header2 {
+    color: #47300f;
+    font-size: 70px;
+    position: absolute;
+    left: 230px;
+    bottom: 280px;
+    font-family: 'DM Serif Display', serif;
+}
+
+.order-button {
+    position: absolute;
+    left: 230px;
+    bottom: 180px;
+    background-color: #DFAD74;
+    color: white;
+    border: #DFAD74;
     border-radius: 15px;
-    size:30px;
+    size: 30px;
 }
-.order-button:hover{
-    background-color:#eab272;
+
+.order-button:hover {
+    background-color: #eab272;
 }
-.container{
-    display:grid;
-}
-.custom-navbar{
-    display:flex;
-    justify-content:space-between;
-    gap:2rem;
-}
-.cupcake-hero-pic{
-    height:520px;
+
+.cupcake-hero-pic {
+    height: 520px;
     width: 470px;
-    border-radius:70%;
+    border-radius: 70%;
     position: absolute;
     top: 110px;
     right: 160px;
     z-index: 2;
 }
-.circle1{
+
+.circle1 {
     height: 170px;
     width: 180px;
-    background-color:rgb(223,173,116);
-    border-radius:50%;
+    background-color: rgb(223, 173, 116);
+    border-radius: 50%;
     position: absolute;
     top: 120px;
     right: 140px;
     align-content: last baseline;
     z-index: 1;
 }
-.circle2{
+
+.circle2 {
     width: 1450px;
-    height:120px;
+    height: 120px;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
-    background-color:#EBB6C8;
-    position:absolute;
+    background-color: #EBB6C8;
+    position: absolute;
     bottom: 0px;
-    left:0px;
-    right:0px;
-    z-index:0;
+    left: 0px;
+    right: 0px;
+    z-index: 0;
 }
-
