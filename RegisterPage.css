@@ -1,0 +1,96 @@
+body {
+    background-color: #E2D3CD;
+    font-family: 'DM Serif Display', serif;
+}
+
+.container {
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.8;
+    z-index:0;
+}
+.img-fluid {
+    z-index:-2;
+}
+label{
+    text-align: left;
+}
+.pink {
+    width: 200px;
+    height:200px;
+    background-color: #DBA3B6;
+    top: 10%;
+    right: -40px;
+}
+.button{
+    position: absolute;
+    top: 5%;
+    left: -25px;
+    border-radius:13px;
+    padding:10px;
+    background-color:#614C4C;
+    color:white;
+}
+.button:hover{
+    background-color:#847070;
+}
+.brown {
+    width: 200px;
+    height: 200px;
+    background-color: #C69C6D;
+    bottom: 5%;
+    left: -50px;
+}
+.btn{
+    border-radius:13px;
+    padding:5px;
+    background-color:#DBA3B6;
+    margin-top:1rem;
+    cursor: pointer;
+    border-color:#923f5b;
+    color:white;
+    margin-right: 40% !important;
+    margin-left: 42% !important ;
+}
+.btn:hover , .btn:active{
+    background-color:#a74465;
+    color:white;
+}
+input:active{
+border-color: #a74465;
+}
+
+@media (max-width: 768px) {
+    .container{
+        overflow: hidden;
+    }
+    .circle{
+        opacity: 0.5;
+    }
+    .pink {
+        width: 100px;
+        height: 100px;
+        right: -20px;
+    }
+    
+    .brown {
+        width: 100px;
+        height: 100px;
+        left: -30px;
+    }
+    .button{
+        top: 5%;
+        left: 10px;
+    }
+    .btn{
+        margin-right: 40% !important;
+        margin-left: 40% !important ;
+    }
+}
+a:hover{
+color:#C69C6D;
+}
