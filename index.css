@@ -210,7 +210,9 @@ label {
     text-align: left;
   }
   .search-bar{
-    min-width:20px;
-    width:30px;
+    width: 100%; /* Makes it responsive */
+    max-width: 300px; /* Adjust as needed */
+    min-width: 150px;
+    margin-left:0;
   }
 }
